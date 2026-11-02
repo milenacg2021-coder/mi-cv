@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milena Cabrera Gómez | Arquitecta & Diseñadora de Interiores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdfbf7',
+                            100: '#f4ede1',
+                            600: '#8c6d48',
+                            700: '#705435',
+                            800: '#59422a',
+                            900: '#423120',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-break { page-break-after: always; }
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-stone-800 antialiased font-sans">
+
+    <!-- BARRA DE ACCIÓN SUPERIOR (No se imprime) -->
+    <header class="no-print sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <span class="font-bold tracking-wider text-brand-800 text-sm md:text-base">MCG | PORTAFOLIO & CV</span>
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="bg-brand-700 hover:bg-brand-800 text-white text-xs md:text-sm font-medium px-4 py-2 rounded-lg transition shadow-sm flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                    Imprimir / Guardar PDF
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO / DATOS PERSONALES -->
+    <section class="max-w-6xl mx-auto px-4 py-12 md:py-16">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-stone-200 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 flex flex-col items-center text-center">
+                <div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-brand-100 shadow-md mb-4">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Milena Cabrera Gómez" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-xl md:text-2xl font-bold text-stone-900">Milena Cabrera Gómez</h1>
+                <p class="text-brand-700 font-medium text-sm mt-1">Arquitecta & Estudiante de Diseño de Interiores</p>
+            </div>
+            
+            <div class="md:col-span-2 space-y-4">
+                <h2 class="text-lg font-semibold text-stone-900 border-b border-stone-100 pb-2">Perfil Profesional</h2>
+                <p class="text-stone-600 text-sm md:text-base leading-relaxed">
+                    Persona comprometida, con aprendizaje ágil y alta capacidad para trabajar bajo presión. Perfil multidisciplinario enfocado en el diseño de interiores, optimización de mobiliario en melamina, modelado 3D avanzado, supervisión de obras civiles y docencia en áreas técnicas y creativas. Graduada de la carrera de Arquitectura en la Universidad Mayor de San Simón (UMSS) y cursando especialización en Diseño de Interiores y del Mobiliario.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs md:text-sm text-stone-600">
+                    <div class="flex items-center gap-2">
+                        <span class="font-semibold text-stone-800">Teléfono:</span> +591 76139963[cite: 3]
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-semibold text-stone-800">Correo:</span> milenacg2021@gmail.com[cite: 3]
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-semibold text-stone-800">Ubicación:</span> Cochabamba, Bolivia[cite: 3]
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-semibold text-stone-800">Nacimiento:</span> 02/05/2001[cite: 3]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL Y PASANTÍAS -->
+    <section class="max-w-6xl mx-auto px-4 pb-12">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-stone-200">
+            <h2 class="text-xl font-bold text-stone-900 mb-6 flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                Experiencia Profesional y Pasantías
+            </h2>
+            <div class="space-y-8 border-l-2 border-brand-100 pl-6 ml-2">
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-600 border-4 border-white"></div>
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Feb 2025 – Ago 2025</span>
+                    <h3 class="text-base font-bold text-stone-900 mt-1">Arquitecta Diseñadora y Residente de Obra</h3>
+                    <p class="text-sm font-medium text-stone-600">Estudio de Arquitectura ARQUITOP SRL (Cochabamba)</p>
+                    <p class="text-xs text-stone-500 mt-1">Funciones de gabinete, supervisión, control y residencia de obra civil, diseño de interiores y mobiliario[cite: 13].</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-600 border-4 border-white"></div>
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Gestión 2025</span>
+                    <h3 class="text-base font-bold text-stone-900 mt-1">Docente / Instructora Multidisciplinaria</h3>
+                    <p class="text-sm font-medium text-stone-600">Liberland - Sede Bolivia (Centro de Desarrollo del Talento)</p>
+                    <p class="text-xs text-stone-500 mt-1">Impartición de módulos académicos en Creación de Cómics, Dibujo, Pintura, Trading y Oratoria[cite: 14].</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-600 border-4 border-white"></div>
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Ene 2024 – Mar 2024</span>
+                    <h3 class="text-base font-bold text-stone-900 mt-1">Pasante de Arquitectura</h3>
+                    <p class="text-sm font-medium text-stone-600">Empresa Constructora "100% Efectivo" - Edificio Golden Park</p>
+                    <p class="text-xs text-stone-500 mt-1">Apoyo en supervisión y control técnico durante la construcción del edificio multifamiliar-comercio[cite: 6].</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-600 border-4 border-white"></div>
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Ene 2024 – Feb 2024</span>
+                    <h3 class="text-base font-bold text-stone-900 mt-1">Diseñadora de Interiores (Proyecto Fisionutriestética)</h3>
+                    <p class="text-sm font-medium text-stone-600">Zurita Construcciones (Andrea Montero)</p>
+                    <p class="text-xs text-stone-500 mt-1">Ejecución exitosa del proyecto integral de diseño interior comercial y sanitario[cite: 7].</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-600 border-4 border-white"></div>
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Nov 2022 – Feb 2023</span>
+                    <h3 class="text-base font-bold text-stone-900 mt-1">Practicante Preprofesional (Beca Académica)</h3>
+                    <p class="text-sm font-medium text-stone-600">Universidad Mayor de San Simón (UMSS - DISU)</p>
+                    <p class="text-xs text-stone-500 mt-1">Desarrollo de prácticas preprofesionales con 200 horas académicas avaladas institucionalmente[cite: 8].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMACIÓN Y CURSOS ESPECIALIZADOS -->
+    <section class="max-w-6xl mx-auto px-4 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-200">
+                <h2 class="text-lg font-bold text-stone-900 mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                    Formación Académica
+                </h2>
+                <ul class="space-y-4 text-sm text-stone-600">
+                    <li class="border-b border-stone-100 pb-3">
+                        <span class="font-semibold text-stone-900 block">Licenciatura en Arquitectura</span>
+                        Universidad Mayor de San Simón (UMSS)[cite: 3]
+                    </li>
+                    <li class="border-b border-stone-100 pb-3">
+                        <span class="font-semibold text-stone-900 block">Diseño de Interiores y del Mobiliario (Cursando)</span>
+                        Universidad Mayor de San Simón (UMSS)[cite: 3]
+                    </li>
+                    <li>
+                        <span class="font-semibold text-stone-900 block">Educación Secundaria</span>
+                        Colegio Pedro Poveda (Bachiller)[cite: 3]
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-200">
+                <h2 class="text-lg font-bold text-stone-900 mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    Cursos y Capacitaciones
+                </h2>
+                <ul class="space-y-3 text-xs md:text-sm text-stone-600">
+                    <li class="flex items-start gap-2">
+                        <span class="text-brand-600 font-bold">•</span>
+                        <span><strong>Diseño, Despiece y Documentación Técnica en Melamina con SketchUp</strong> (100 hrs. - Majestic Ingeniería / SIB)[cite: 12]</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-brand-600 font-bold">•</span>
+                        <span><strong>Conceptualización, Diseño y Renderización con IA</strong> (Posicitonate S.R.L.)[cite: 9]</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-brand-600 font-bold">•</span>
+                        <span><strong>Corredores Verdes e Iluminación Comercial</strong> (Posicitonate S.R.L.)[cite: 3, 10]</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-brand-600 font-bold">•</span>
+                        <span><strong>Análisis de Costos PRESCOM y Manejo de Porcelanato Líquido</strong> (UMSS)[cite: 3]</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-brand-600 font-bold">•</span>
+                        <span><strong>Relevamiento Urbano (Río Rocha - Ciclo Footings)</strong> (Arquitop S.R.L. - 80 hrs.)[cite: 3, 4]</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOMINIO DE SOFTWARE E IDIOMAS -->
+    <section class="max-w-6xl mx-auto px-4 pb-12">
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-200">
+            <h2 class="text-lg font-bold text-stone-900 mb-6">Programas y Herramientas Técnicas</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">ArchiCAD</span><span class="text-xs text-brand-700">Avanzado</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">SketchUp</span><span class="text-xs text-brand-700">Avanzado / Despiece</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">AutoCAD</span><span class="text-xs text-brand-700">Avanzado</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">Revit</span><span class="text-xs text-brand-700">Intermedio</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">D5 Render</span><span class="text-xs text-brand-700">Avanzado</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">Blender</span><span class="text-xs text-brand-700">Intermedio</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">VectorWorks</span><span class="text-xs text-brand-700">Intermedio</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">CypeCad</span><span class="text-xs text-brand-700">Intermedio</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">Prescom</span><span class="text-xs text-brand-700">Presupuestos</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">Photoshop</span><span class="text-xs text-brand-700">Edición</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">Affinity</span><span class="text-xs text-brand-700">Diseño</span></div>
+                <div class="bg-brand-50 p-3 rounded-xl border border-brand-100"><span class="block font-semibold text-stone-800 text-sm">Herramientas IA</span><span class="text-xs text-brand-700">Render & Diseño</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO DE PROYECTOS -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-xl md:text-2xl font-bold text-stone-900">Portafolio de Proyectos Destacados</h2>
+            <div class="flex gap-2">
+                <button onclick="filterProjects('all')" class="px-3 py-1.5 text-xs font-medium bg-brand-700 text-white rounded-lg transition filter-btn active">Todos</button>
+                <button onclick="filterProjects('interior')" class="px-3 py-1.5 text-xs font-medium bg-white text-stone-700 border border-stone-200 rounded-lg transition filter-btn">Interiores</button>
+                <button onclick="filterProjects('arq')" class="px-3 py-1.5 text-xs font-medium bg-white text-stone-700 border border-stone-200 rounded-lg transition filter-btn">Arquitectura</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Proyecto 1: Fisioterapia -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col project-card" data-category="interior">
+                <div class="h-48 bg-stone-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600" alt="Fisioterapia" class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2.5 py-1 rounded-md text-brand-800">Interiorismo Comercial</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-stone-900 text-base mb-2">Diseño Fisioterapia (Área Sanitaria)</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed mb-4 flex-grow">Propuesta integral de diseño interior enfocado en espacios de fisioterapia, área selfie, zona de relajación y tratamiento con paleta cálida y funcional[cite: 19, 22].</p>
+                    <button onclick="openModal('Fisioterapia', 'Diseño interior especializado para área de fisioterapia y estética. Incluye distribución en planta, iluminación comercial, áreas de camillas, zona selfie interactiva y acabados texturizados en madera y tonos cálidos.', ['ArchiCAD', 'SketchUp', 'D5 Render'], ['Planta general amoblada', 'Vistas 3D de camillas', 'Detalle zona selfie'])" class="text-brand-700 hover:text-brand-800 text-xs font-semibold flex items-center gap-1 mt-auto">
+                        Ver Ficha Técnica &rarr;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Edificio Multifuncional -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col project-card" data-category="arq">
+                <div class="h-48 bg-stone-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600" alt="Edificio" class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2.5 py-1 rounded-md text-brand-800">Arquitectura</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-stone-900 text-base mb-2">Edificio Multifuncional Residencia-Comercio</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed mb-4 flex-grow">Anteproyecto arquitectónico de desarrollo mixto con áreas residenciales y comerciales en altura, optimizando circulaciones y confort urbano[cite: 24, 25].</p>
+                    <button onclick="openModal('Edificio Multifuncional Residencia-Comercio', 'Desarrollo de anteproyecto arquitectónico para edificio de uso mixto. Incluye plantas de distribución por niveles, volumetría exterior y zonificación de áreas de comercio y departamentos residenciales.', ['ArchiCAD', 'AutoCAD', 'SketchUp'], ['Plantas arquitectónicas', 'Elevaciones y vistas este/oeste', 'Criterio de diseño bioclimático'])" class="text-brand-700 hover:text-brand-800 text-xs font-semibold flex items-center gap-1 mt-auto">
+                        Ver Ficha Técnica &rarr;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Diseño de Sala Familiar -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col project-card" data-category="interior">
+                <div class="h-48 bg-stone-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600" alt="Sala" class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2.5 py-1 rounded-md text-brand-800">Interiorismo Residencial</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-stone-900 text-base mb-2">Diseño de Sala Familiar y Estar</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed mb-4 flex-grow">Propuesta moderna de sala familiar con distribución milimétrica, iluminación lineal integrada y mobiliario contemporáneo en tonos madera[cite: 30].</p>
+                    <button onclick="openModal('Diseño de Sala Familiar', 'Proyecto de interiorismo residencial para sala de estar. Incorpora falsos techos con iluminación perimetral LED, paneles de madera decorativos y selección de mobiliario ergonómico.', ['SketchUp', 'D5 Render', 'Photoshop'], ['Planta amoblada con cotas', 'Renders 3D fotorrealistas', 'Detalle de iluminación'])" class="text-brand-700 hover:text-brand-800 text-xs font-semibold flex items-center gap-1 mt-auto">
+                        Ver Ficha Técnica &rarr;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: Jardín y Parrillero -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col project-card" data-category="arq">
+                <div class="h-48 bg-stone-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Jardín" class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2.5 py-1 rounded-md text-brand-800">Paisajismo</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-stone-900 text-base mb-2">Diseño de Jardín y Parrillero Residencial</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed mb-4 flex-grow">Diseño de espacio exterior con pérgola de madera, área de socialización, sector de parrillero, lavandería y vegetación perimetral[cite: 26].</p>
+                    <button onclick="openModal('Diseño de Jardín y Parrillero', 'Proyecto de paisajismo y arquitectura exterior. Distribución de áreas de descanso, circulación al aire libre, pérgolas de madera natural y sector de parrilla.', ['SketchUp', 'AutoCAD'], ['Planta de emplazamiento y cotas', 'Vistas de la pérgola', 'Paleta vegetal y de colores'])" class="text-brand-700 hover:text-brand-800 text-xs font-semibold flex items-center gap-1 mt-auto">
+                        Ver Ficha Técnica &rarr;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Proyecto 5: Mobiliario de Melamina y Cama con Cajones -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col project-card" data-category="interior">
+                <div class="h-48 bg-stone-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=600" alt="Mobiliario" class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2.5 py-1 rounded-md text-brand-800">Mobiliario & Despiece</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-stone-900 text-base mb-2">Cama Modular y Mobiliario en Melamina</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed mb-4 flex-grow">Diseño de mobiliario especializado con optimización de espacio, cajoneras inferiores integradas, respaldo ranurado y despiece técnico para fabricación[cite: 29].</p>
+                    <button onclick="openModal('Mobiliario en Melamina y Cama Modular', 'Diseño de mobiliario a medida con respaldo de madera ranurada y estructura de cama con cajoneras inferiores. Desarrollado con técnicas de despiece para optimización de planchas de melamina.', ['SketchUp', 'OpenCutList', 'Prescom'], ['Plano de despiece y corte', 'Modelo 3D desglosado', 'Especificaciones de herrajes'])" class="text-brand-700 hover:text-brand-800 text-xs font-semibold flex items-center gap-1 mt-auto">
+                        Ver Ficha Técnica &rarr;
+                    </button>
+                </div>
+            </div>
+
+            <!-- Proyecto 6: Diseño de Dormitorio -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col project-card" data-category="interior">
+                <div class="h-48 bg-stone-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=600" alt="Dormitorio" class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold px-2.5 py-1 rounded-md text-brand-800">Interiorismo</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-stone-900 text-base mb-2">Diseño de Dormitorio Principal y Vestidor</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed mb-4 flex-grow">Propuesta de dormitorio principal con área de vestidor integrada, iluminación indirecta cenital y optimización espacial en planta[cite: 33].</p>
+                    <button onclick="openModal('Dormitorio Principal y Vestidor', 'Proyecto de diseño interior residencial enfocado en la suite principal. Incluye distribución de vestidor a medida, iluminación decorativa y zonificación norte-sur.', ['ArchiCAD', 'SketchUp', 'D5 Render'], ['Planta amoblada con cotas de vestidor', 'Vistas interiores norte y sur', 'Criterio lumínico'])" class="text-brand-700 hover:text-brand-800 text-xs font-semibold flex items-center gap-1 mt-auto">
+                        Ver Ficha Técnica &rarr;
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE FICHA TÉCNICA -->
+    <div id="projectModal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 md:p-8 shadow-xl relative border border-stone-200 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-700 text-xl font-bold">&times;</button>
+            <span id="modalCategory" class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Ficha Técnica</span>
+            <h3 id="modalTitle" class="text-xl font-bold text-stone-900 mt-1 mb-3">Título del Proyecto</h3>
+            <p id="modalDescription" class="text-stone-600 text-sm leading-relaxed mb-6">Descripción detallada del proyecto y sus alcances técnicos.</p>
+            
+            <div class="mb-6">
+                <h4 class="text-xs font-bold text-stone-800 uppercase tracking-wider mb-2">Software y Herramientas</h4>
+                <div id="modalTools" class="flex flex-wrap gap-2">
+                    <!-- Dinámico -->
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="text-xs font-bold text-stone-800 uppercase tracking-wider mb-2">Entregables y Planimetría</h4>
+                <ul id="modalDeliverables" class="list-disc list-inside text-xs text-stone-600 space-y-1">
+                    <!-- Dinámico -->
+                </ul>
+            </div>
+
+            <button onclick="closeModal()" class="w-full bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold py-3 rounded-xl transition">Cerrar Ficha</button>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE INTERACTIVIDAD -->
+    <script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-700', 'text-white');
+                btn.classList.add('bg-white', 'text-stone-700');
+            });
+            event.target.classList.remove('bg-white', 'text-stone-700');
+            event.target.classList.add('bg-brand-700', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function openModal(title, description, tools, deliverables) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            
+            const toolsContainer = document.getElementById('modalTools');
+            toolsContainer.innerHTML = '';
+            tools.forEach(tool => {
+                const span = document.createElement('span');
+                span.className = 'bg-brand-50 text-brand-800 text-xs font-medium px-2.5 py-1 rounded-md border border-brand-100';
+                span.innerText = tool;
+                toolsContainer.appendChild(span);
+            });
+
+            const delivContainer = document.getElementById('modalDeliverables');
+            delivContainer.innerHTML = '';
+            deliverables.forEach(item => {
+                const li = document.createElement('li');
+                li.innerText = item;
+                delivContainer.appendChild(li);
+            });
+
+            document.getElementById('projectModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
